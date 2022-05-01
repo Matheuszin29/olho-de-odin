@@ -1,0 +1,46 @@
+.movie{
+    margin-bottom : 30px; 
+}
+.movie h2{
+    margin: 0px 0px 0px 30px;
+}
+.MovieRow--list-area{
+    overflow-x: hidden;
+    padding-left: 30px;
+
+}
+.movierow--list{
+    width: 99999999px;
+}
+.movie--item{
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+.movie--item img{
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s ;
+}
+.movie--item img:hover{
+    transform: scale(1);
+}
+.movierow-left,
+.movierow-right{
+    position:absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer; 
+}
+.movierow-left{
+    left: 0;
+}
+.movierow-right{
+    right: 0;
+}

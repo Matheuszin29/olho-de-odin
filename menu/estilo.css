@@ -1,0 +1,61 @@
+/*para marcar todos os elementos desse arquivo*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.pagina{ 
+    background-color: rgb(221, 161, 171);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checbox{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+}
+.checbox .trace{
+    width: 90px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    border-radius: 4px;
+    /*provavelmente expecificando que va ser uma transição suave*/
+    transition: 0.5s ease-in-out;
+}
+.checbox .trace:nth-child(1){
+    top:  26px;
+    transform: rotate(0);
+}
+.checbox .trace:nth-child(2){
+    top:  46px;
+    transform: rotate(0);
+}
+.checbox .trace:nth-child(3){
+    top:  66px;
+    transform: rotate(0);
+}
+#toggle {
+    display: none;
+}
+#toggle:checked + .checbox .trace:nth-child(1){
+    transform: rotate(45deg);
+    top: 47px;
+}
+#toggle:checked + .checbox .trace:nth-child(2){
+    transform: translateX(-100px);
+    width:  30px;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle:checked + .checbox .trace:nth-child(3){
+    transform: rotate(-45deg);
+    top: 48px;
+}

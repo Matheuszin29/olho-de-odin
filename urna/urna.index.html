@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="urna.css">
+    <title>urna</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="d-1">
+                <div class="d-1-left">
+                    <div class="d-1-1">
+                        <span>seu voto para</span>
+                    </div>
+                    <div class="d-1-2">
+                        <span>presidente</span>
+                    </div>
+                    <div class="d-1-3">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="d-1-4">
+                        Nome: fulano de tal<br/>
+                        partido: QQQ <br/>
+                        Vice-presidente: beltrano de tal <br/> 
+                    </div>   
+                </div>
+                <div class="d-1-right">
+                    <div class="d-1-image">
+                        <img src="imagens/leoncio.jpg" alt="" />
+                        presidente
+                    </div>
+                    <div class="d-1-image small">
+                        <img src="imagens/patolino.jpg" alt="" />
+                        Vice-presidente
+                    </div>
+                </div>
+            </div>
+            <div class="d-2">
+                aperte a tela:<br/>
+                confirma para confirmar este voto<br/>
+                corrige para reiniciar este voto<br/> 
+            </div>
+        </div>
+        
+        <div class="boton">
+            // /*botoes*/ 
+            <div class="fila">
+                <div class="tecla" onclick="clicou('1')">1</div>
+                <div class="tecla" onclick="clicou('2')">2</div>
+                <div class="tecla"onclick="clicou('3')">3</div>
+            </div>
+            <div class="fila">
+                <div class="tecla"onclick="clicou('4')">4</div>
+                <div class="tecla"onclick="clicou('5')">5</div>
+                <div class="tecla"onclick="clicou('6')">6</div>
+            </div>
+            <div class="fila">
+                <div class="tecla"onclick="clicou('7')">7</div>
+                <div class="tecla"onclick="clicou('8')">8</div>
+                <div class="tecla"onclick="clicou('9')">9</div>
+            </div>
+            <div class="fila">
+                <div class="tecla"onclick="clicou('0')">0</div>
+            </div>
+            <div class="fila">
+                <div class="tecla tecla-branco"onclick="branco('')">BRANCO</div>
+                <div class="tecla tecla-corrige"onclick="corrige('')">CORRIGE</div>
+                <div class="tecla tecla-confirma"onclick="confirma('')">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+    <script src="candidatos.js"></script>
+    <script src="urna.js"></script>
+</body>
+</html>
